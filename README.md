@@ -35,8 +35,8 @@ A simple Bible reference website built using **HTML, CSS, and JavaScript**.
 
 ## Live Website
 
-https://yourusername.github.io/bible-reference-app/
+https://charanepuri.github.io/bible-reference-app/
 
 ## Author
 
-Charan
+Charan Teja Epuri
