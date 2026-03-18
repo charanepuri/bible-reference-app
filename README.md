@@ -1,8 +1,14 @@
-# Bible Reference Web App
+# 📖 Bible Reference Web App
 
-A simple Bible reference website built using **HTML, CSS, and JavaScript**.
+A simple and structured Bible reference web application built using **HTML, CSS, and JavaScript**.
 
-## Features
+This project helps users understand the structure of the Bible, including books, categories, and key statistics.
+
+---
+
+## 🚀 Features
+
+### Phase 1 (Completed)
 
 - Bible Overview Statistics
 - Old Testament Categories
@@ -10,33 +16,73 @@ A simple Bible reference website built using **HTML, CSS, and JavaScript**.
 - Bible Facts (Longest / Shortest)
 - Languages Display (Indian Languages)
 
-## Bible Statistics
+### Phase 2 (Completed)
 
-- Total Books: 66
-- Old Testament: 39
-- New Testament: 27
-- Total Chapters: 1,189
-- Total Verses: 31,102
-- Approx Authors: ~40
+- Dynamic rendering of Bible books using JavaScript
+- Structured dataset for all 66 books
+- Book details including:
+  - Name
+  - Testament
+  - Category
+  - Chapters
+  - Verses
+  - Writer
 
-## Technologies Used
+- Separate rendering for Old & New Testament pages
+
+---
+
+## 📊 Bible Statistics
+
+- **Total Books:** 66
+- **Old Testament:** 39
+- **New Testament:** 27
+- **Total Chapters:** 1,189
+- **Total Verses:** 31,102
+- **Approx Authors:** ~40
+
+---
+
+## 🛠 Technologies Used
 
 - HTML
 - CSS
-- JavaScript
-- GitHub Pages
+- JavaScript (DOM Manipulation & Dynamic Rendering)
+- Git & GitHub
+- GitHub Pages (Deployment)
 
-## Future Improvements
+---
 
-- Display all 66 Bible books dynamically
-- Add search functionality
-- Language switching (Telugu, Hindi, Tamil, etc.)
-- Bible history section
+## 🔄 Future Improvements (Next Phases)
 
-## Live Website
+- 🔍 Search Bible books
+- 📚 Filter books by category
+- 🌍 Language switching (Telugu, Hindi, Tamil, etc.)
+- 📖 Bible history and timeline section
+- 🎨 UI/UX improvements
 
-https://charanepuri.github.io/bible-reference-app/
+## 🌐 Live Website
 
-## Author
+# Charan Teja Epuri
 
-Charan Teja Epuri
+👉 https://charanepuri.github.io/bible-reference-app/
+
+---
+
+## 📌 GitHub Repository
+
+👉 https://github.com/charanepuri/bible-reference-app
+
+---
+
+## 👨‍💻 Author
+
+**Charan Teja Epuri**
+
+---
+
+## ⭐ Project Status
+
+✅ Phase 1 — Completed
+✅ Phase 2 — Completed
+⏳ Phase 3 — In Progress (Search & Filter Features)
