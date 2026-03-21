@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="UTF-8">
-    <title>Old Testament | Bible Reference App</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <meta charset="UTF-8">
+        <title>Old Testament | Bible Reference App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>Old Testament</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="old-testament.html">Old Testament</a>
+                <a href="new-testament.html">New Testament</a>
+                <a href="facts.html">Bible Facts</a>
+                <a href="languages.html">Languages</a>
+            </nav>
+        </header>
 
-<body>
-    
-    <header>
-        <h1>Old Testament</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="old-testament.html">Old Testament</a>
-            <a href="new-testament.html">New Testament</a>
-            <a href="facts.html">Bible Facts</a>
-            <a href="languages.html">Languages</a>
-        </nav>
-    </header>
+        <!-- HERO -->
+        <section class="hero">
+            <h2>Categories of the Old Testament</h2>
+        </section>
 
-    <section class="hero">
-        <h2>Categories of the Old Testament</h2>
-    </section>
+        <!-- CATEGORY CARDS -->
+        <section class="stats">
+            <div class="card">
+                <h2>Law</h2>
+                <p>5 Books</p>
+            </div>
 
-    <section class="stats">
+            <div class="card">
+                <h2>History</h2>
+                <p>12 Books</p>
+            </div>
 
-        <div class="card">
-            <h2>Law</h2>
-            <p>5 Books</p>
+            <div class="card">  
+                <h2>Poetry</h2>
+                <p>5 Books</p>
+            </div>
+
+            <div class="card">
+                <h2>Major Prophets</h2>
+                <p>5 Books</p>
+            </div>
+
+            <div class="card">
+                <h2>Minor Prophets</h2>
+                <p>12 Books</p>
+            </div>
+        </section>
+
+        <!-- 🔍 SEARCH BAR -->
+        <div style="text-align:center; margin-top:20px;">
+            <input type="text" id="searchInput" placeholder="Search Bible Book..." style="padding:10px; width:250px; border-radius:5px; border:1px solid #ccc;">
         </div>
 
-
-        <div class="card">
-            <h2>History</h2>
-            <p>12 Books</p>
+        <!-- 📚 FILTER BUTTONS -->
+        <div style="text-align:center; margin:20px;">
+            <button class="filter-btn" data-category="All">All</button>
+            <button class="filter-btn" data-category="Law">Law</button>
+            <button class="filter-btn" data-category="History">History</button>
+            <button class="filter-btn" data-category="Poetry">Poetry</button>
+            <button class="filter-btn" data-category="Major Prophets">Major Prophets</button>
+            <button class="filter-btn" data-category="Minor Prophets">Minor Prophets</button>
         </div>
 
-        <div class="card">  
-            <h2>Poetry</h2>
-            <p>5 Books</p>
-        </div>
+        <!-- 📖 DYNAMIC BOOKS -->
+        <section class="stats" id="booksContainer" data-testament="Old Testament"></section>
 
-        <div class="card">
-            <h2>Major Prophets</h2>
-            <p>5 Books</p>
-        </div>
+        <!-- JS FILES -->
+        <script src="js/data.js"></script>
+        <script src="js/script.js"></script>
 
-        <div class="card">
-            <h2>Minor Prophets</h2>
-            <p>12 Books</p>
-        </div>
-
-    </section>
-    
-    <section class="stats" id="booksContainer" data-testament="Old Testament"></section>
-    
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
-
-</body>
+    </body>
 </html>

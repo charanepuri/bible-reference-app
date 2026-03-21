@@ -19,10 +19,12 @@
       </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <h2>Categories of the New Testament</h2>
     </section>
 
+    <!-- CATEGORY CARDS -->
     <section class="stats">
       <div class="card">
         <h2>Gospels</h2>
@@ -49,9 +51,26 @@
         <p>1 Book</p>
       </div>
     </section>
-    
+
+    <!-- 🔍 SEARCH BAR -->
+    <div style="text-align: center; margin-top: 20px;">
+      <input type="text" id="searchInput" placeholder="Search Bible Book..." style="padding: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc;">
+    </div>
+
+    <!-- 📚 FILTER BUTTONS -->
+     <div style="text-align:center; margin:20px;">
+        <button class="filter-btn" data-category="All">All</button>
+        <button class="filter-btn" data-category="Gospels">Gospels</button>
+        <button class="filter-btn" data-category="History">History</button>
+        <button class="filter-btn" data-category="Pauline Epistles">Pauline Epistles</button>
+        <button class="filter-btn" data-category="General Epistles">General Epistles</button>
+        <button class="filter-btn" data-category="Prophecy">Prophecy</button>
+      </div>
+
+    <!-- 📖 DYNAMIC BOOKS -->
     <section class="stats" id="booksContainer" data-testament="New Testament"></section>
     
+    <!-- JS FILES -->
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
   </body>
