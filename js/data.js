@@ -91,3 +91,104 @@ const bibleBooks = [
     { name: "Revelation", testament: "New Testament", category: "Prophecy", chapters: 22, verses: 404, writer: "John" }
 
 ];
+
+const bibleLanguages = {
+    telugu: {
+        "Genesis": "ఆదికాండము", "Exodus": "నిర్గమకాండము", "Leviticus": "లేవీయకాండము", "Numbers": "సంఖ్యాకాండము", 
+        "Deuteronomy": "ద్వితీయోపదేశకాండము",
+        "Joshua": "యెహోషువ", "Judges": "న్యాయాధిపతులు", "Ruth": "రూతు", "1 Samuel": "1 సమూయేలు", "2 Samuel": "2 సమూయేలు",
+        "1 Kings": "1 రాజులు", "2 Kings": "2 రాజులు", "1 Chronicles": "1 దినవృత్తాంతములు", "2 Chronicles": "2 దినవృత్తాంతములు",
+        "Ezra": "ఎజ్రా", "Nehemiah": "నెహెమ్యా", "Esther": "ఎస్తేరు",
+        "Job": "యోబు", "Psalms": "కీర్తనల గ్రంథము", "Proverbs": "సామెతలు", "Ecclesiastes": "ప్రసంగి", "Song of Solomon": "పరమగీతము",
+        "Isaiah": "యెషయా", "Jeremiah": "యిర్మియా", "Lamentations": "విలాపవాక్యములు", "Ezekiel": "యెహెజ్కేలు", "Daniel": "దానియేలు",
+        "Hosea": "హోషేయా", "Joel": "యోవేలు", "Amos": "ఆమోసు", "Obadiah": "ఓబద్యా", "Jonah": "యోనా", "Micah": "మీకా",
+        "Nahum": "నహూము", "Habakkuk": "హబక్కూకు", "Zephaniah": "జెఫన్యా", "Haggai": "హగ్గయి", "Zechariah": "జెకర్యా", "Malachi": "మలాకీ",
+        "Matthew": "మత్తయి", "Mark": "మార్కు", "Luke": "లూకా", "John": "యోహాను", "Acts": "అపొస్తలుల కార్యములు",
+        "Romans": "రోమీయులకు", "1 Corinthians": "1 కొరింథీయులకు", "2 Corinthians": "2 కొరింథీయులకు", "Galatians": "గలతీయులకు",
+        "Ephesians": "ఎఫెసీయులకు", "Philippians": "ఫిలిప్పీయులకు", "Colossians": "కొలొస్సయులకు",
+        "1 Thessalonians": "1 థెస్సలొనీకయులకు", "2 Thessalonians": "2 థెస్సలొనీకయులకు",
+        "1 Timothy": "1 తిమోతికి", "2 Timothy": "2 తిమోతికి", "Titus": "తీతుకు", "Philemon": "ఫిలేమోనుకు",
+        "Hebrews": "హెబ్రీయులకు", "James": "యాకోబు", "1 Peter": "1 పేతురు", "2 Peter": "2 పేతురు",
+        "1 John": "1 యోహాను", "2 John": "2 యోహాను", "3 John": "3 యోహాను", "Jude": "యూదా", "Revelation": "ప్రకటన గ్రంథము"
+    },
+
+    hindi: {
+        "Genesis": "उत्पत्ति", "Exodus": "निर्गमन", "Leviticus": "लैव्यव्यवस्था", "Numbers": "गिनती", "Deuteronomy": "व्यवस्थाविवरण",
+        "Joshua": "यहोशू", "Judges": "न्यायियों", "Ruth": "रूत", "1 Samuel": "1 शमूएल", "2 Samuel": "2 शमूएल",
+        "1 Kings": "1 राजा", "2 Kings": "2 राजा", "1 Chronicles": "1 इतिहास", "2 Chronicles": "2 इतिहास",
+        "Ezra": "एज्रा", "Nehemiah": "नहेम्याह", "Esther": "एस्तेर",
+        "Job": "अय्यूब", "Psalms": "भजन संहिता", "Proverbs": "नीतिवचन", "Ecclesiastes": "सभोपदेशक", "Song of Solomon": "श्रेष्ठगीत",
+        "Isaiah": "यशायाह", "Jeremiah": "यिर्मयाह", "Lamentations": "विलापगीत", "Ezekiel": "यहेजकेल", "Daniel": "दानिय्येल",
+        "Hosea": "होशे", "Joel": "योएल", "Amos": "आमोस", "Obadiah": "ओबद्याह", "Jonah": "योना", "Micah": "मीका",
+        "Nahum": "नहूम", "Habakkuk": "हबक्कूक", "Zephaniah": "सपन्याह", "Haggai": "हाग्गै", "Zechariah": "जकर्याह", "Malachi": "मलाकी",
+        "Matthew": "मत्ती", "Mark": "मरकुस", "Luke": "लूका", "John": "यूहन्ना", "Acts": "प्रेरितों के काम",
+        "Romans": "रोमियों", "1 Corinthians": "1 कुरिन्थियों", "2 Corinthians": "2 कुरिन्थियों", "Galatians": "गलातियों",
+        "Ephesians": "इफिसियों", "Philippians": "फिलिप्पियों", "Colossians": "कुलुस्सियों",
+        "1 Thessalonians": "1 थिस्सलुनीकियों", "2 Thessalonians": "2 थिस्सलुनीकियों",
+        "1 Timothy": "1 तीमुथियुस", "2 Timothy": "2 तीमुथियुस", "Titus": "तीतुस", "Philemon": "फिलेमोन",
+        "Hebrews": "इब्रानियों", "James": "याकूब", "1 Peter": "1 पतरस", "2 Peter": "2 पतरस",
+        "1 John": "1 यूहन्ना", "2 John": "2 यूहन्ना", "3 John": "3 यूहन्ना", "Jude": "यहूदा", "Revelation": "प्रकाशितवाक्य"
+    },
+
+    tamil: {
+        "Genesis": "ஆதியாகமம்", "Exodus": "யாத்திராகமம்", "Leviticus": "லேவியராகமம்", "Numbers": "எண்ணாகமம்", 
+        "Deuteronomy": "உபாகமம்",
+        "Joshua": "யோசுவா", "Judges": "நியாயாதிபதிகள்", "Ruth": "ரூத்", "1 Samuel": "1 சாமுவேல்", "2 Samuel": "2 சாமுவேல்",
+        "1 Kings": "1 இராஜாக்கள்", "2 Kings": "2 இராஜாக்கள்", "1 Chronicles": "1 நாளாகமம்", "2 Chronicles": "2 நாளாகமம்",
+        "Ezra": "எஸ்றா", "Nehemiah": "நெகேமியா", "Esther": "எஸ்தர்",
+        "Job": "யோபு", "Psalms": "சங்கீதம்", "Proverbs": "நீதிமொழிகள்", "Ecclesiastes": "பிரசங்கி", "Song of Solomon": "உன்னதப்பாட்டு",
+        "Isaiah": "ஏசாயா", "Jeremiah": "எரேமியா", "Lamentations": "புலம்பல்", "Ezekiel": "எசேக்கியேல்", "Daniel": "தானியேல்",
+        "Hosea": "ஓசியா", "Joel": "யோவேல்", "Amos": "ஆமோஸ்", "Obadiah": "ஒபதியா", "Jonah": "யோனா", "Micah": "மீகா",
+        "Nahum": "நாகூம்", "Habakkuk": "ஆபகூக்", "Zephaniah": "செப்பனியா", "Haggai": "ஆகாய்", "Zechariah": "சகரியா", 
+        "Malachi": "மல்கியா",
+        "Matthew": "மத்தேயு", "Mark": "மாற்கு", "Luke": "லூக்கா", "John": "யோவான்", "Acts": "அப்போஸ்தலர் பணிகள்",
+        "Romans": "ரோமர்", "1 Corinthians": "1 கொரிந்தியர்", "2 Corinthians": "2 கொரிந்தியர்", "Galatians": "கலாத்தியர்",
+        "Ephesians": "எபேசியர்", "Philippians": "பிலிப்பியர்", "Colossians": "கொலோசெயர்",
+        "1 Thessalonians": "1 தெசலோனிக்கேயர்", "2 Thessalonians": "2 தெசலோனிக்கேயர்",
+        "1 Timothy": "1 தீமோத்தேயு", "2 Timothy": "2 தீமோத்தேயு", "Titus": "தீத்து", "Philemon": "பிலேமோன்",
+        "Hebrews": "எபிரெயர்", "James": "யாக்கோபு", "1 Peter": "1 பேதுரு", "2 Peter": "2 பேதுரு",
+        "1 John": "1 யோவான்", "2 John": "2 யோவான்", "3 John": "3 யோவான்", "Jude": "யூதா", "Revelation": "வெளிப்படுத்தின விசேஷம்"
+    },
+
+    malayalam: {
+        "Genesis": "ഉല്പത്തി", "Exodus": "പുറപ്പാട്", "Leviticus": "ലേവ്യപുസ്തകം", "Numbers": "സംഖ്യാപുസ്തകം", 
+        "Deuteronomy": "ആവർത്തനം",
+        "Joshua": "യോശുവ", "Judges": "ന്യായാധിപന്മാർ", "Ruth": "രൂത്ത്", "1 Samuel": "1 ശമൂവേൽ", "2 Samuel": "2 ശമൂവേൽ",
+        "1 Kings": "1 രാജാക്കന്മാർ", "2 Kings": "2 രാജാക്കന്മാർ", "1 Chronicles": "1 ദിനവൃത്താന്തം", "2 Chronicles": "2 ദിനവൃത്താന്തം",
+        "Ezra": "എസ്രാ", "Nehemiah": "നെഹെമ്യാവ്", "Esther": "എസ്ഥേർ",
+        "Job": "ഇയ്യോബ്", "Psalms": "സങ്കീർത്തനങ്ങൾ", "Proverbs": "സദൃശവാക്യങ്ങൾ", "Ecclesiastes": "സഭാപ്രസംഗി", 
+        "Song of Solomon": "ഉത്തമഗീതം",
+        "Isaiah": "യെശയ്യാവ്", "Jeremiah": "യിരെമ്യാവ്", "Lamentations": "വിലാപങ്ങൾ", "Ezekiel": "യെഹെസ്കേൽ", "Daniel": "ദാനിയേൽ",
+        "Hosea": "ഹോശേയ", "Joel": "യോവേൽ", "Amos": "ആമോസ്", "Obadiah": "ഓബദ്യാവ്", "Jonah": "യോനാ", "Micah": "മീഖാ",
+        "Nahum": "നഹൂം", "Habakkuk": "ഹബക്കൂക്", "Zephaniah": "സെഫന്യാവ്", "Haggai": "ഹഗ്ഗായി", "Zechariah": "സെഖര്യാവ്", 
+        "Malachi": "മലാഖി",
+        "Matthew": "മത്തായി", "Mark": "മർക്കോസ്", "Luke": "ലൂക്കോസ്", "John": "യോഹന്നാൻ", 
+        "Acts": "അപ്പൊസ്തലന്മാരുടെ പ്രവൃത്തികൾ",
+        "Romans": "റോമർ", "1 Corinthians": "1 കൊരിന്ത്യർ", "2 Corinthians": "2 കൊരിന്ത്യർ", "Galatians": "ഗലാത്യർ",
+        "Ephesians": "എഫെസ്യർ", "Philippians": "ഫിലിപ്പിയർ", "Colossians": "കൊലോസ്യർ",
+        "1 Thessalonians": "1 തെസ്സലോനീക്യർ", "2 Thessalonians": "2 തെസ്സലോനീക്യർ",
+        "1 Timothy": "1 തിമൊഥെയൊസ്", "2 Timothy": "2 തിമൊഥെയൊസ്", "Titus": "തീത്തോസ്", "Philemon": "ഫിലേമോൻ",
+        "Hebrews": "എബ്രായർ", "James": "യാക്കോബ്", "1 Peter": "1 പത്രോസ്", "2 Peter": "2 പത്രೋസ്",
+        "1 John": "1 യോഹന്നാൻ", "2 John": "2 യോഹന്നാൻ", "3 John": "3 യോഹന്നാൻ", "Jude": "യൂദാ", "Revelation": "വെളിപാട്"
+    },
+
+    kannada: {
+        "Genesis": "ಆದಿಕಾಂಡ", "Exodus": "ವಿಮೋಚನಕಾಂಡ", "Leviticus": "ಯಾಜಕಕಾಂಡ", "Numbers": "ಅರಣ್ಯಕಾಂಡ", 
+        "Deuteronomy": "ಧರ್ಮೋಪದೇಶಕಾಂಡ",
+        "Joshua": "ಯೆಹೋಶುವ", "Judges": "ನ್ಯಾಯಾಧಿಪತಿಗಳು", "Ruth": "ರೂತಳು", "1 Samuel": "1 ಸಮುವೇಲನು", "2 Samuel": "2 ಸಮುವೇಲನು",
+        "1 Kings": "1 ಅರಸುಗಳು", "2 Kings": "2 ಅರಸುಗಳು", "1 Chronicles": "1 ಪೂರ್ವಕಾಲದ ವೃತ್ತಾಂತ", "2 Chronicles": "2 ಪೂರ್ವಕಾಲದ ವೃತ್ತಾಂತ",
+        "Ezra": "ಎಜ್ರನು", "Nehemiah": "ನೆಹೆಮಿಯನು", "Esther": "ಎಸ್ತೇರಳು",
+        "Job": "ಯೋಬನು", "Psalms": "ಕೀರ್ತನೆಗಳು", "Proverbs": "ಜ್ಞಾನೋಕ್ತಿಗಳು", "Ecclesiastes": "ಪ್ರಸಂಗಿ", "Song of Solomon": "ಪರಮ ಗೀತೆ",
+        "Isaiah": "ಯೆಶಾಯನು", "Jeremiah": "ಯೆರೆಮಿಯನು", "Lamentations": "ಪ್ರಲಾಪಗಳು", "Ezekiel": "ಎಹೆಜ್ಕೇಲನು", "Daniel": "ದಾನಿಯೇಲನು",
+        "Hosea": "ಹೋಶೇಯನು", "Joel": "ಯೋವೇಲನು", "Amos": "ಆಮೋಸನು", "Obadiah": "ಓಬದ್ಯನು", "Jonah": "ಯೋನನು", "Micah": "ಮೀಕಾಯನು",
+        "Nahum": "ನಹೂಮನು", "Habakkuk": "ಹಬಕ್ಕೂಕನು", "Zephaniah": "ಚೆಫನ್ಯನು", "Haggai": "ಹಗ್ಗಾಯನು", "Zechariah": "ಜೆಕರ್ಯನು", 
+        "Malachi": "ಮಲಾಕಿಯನು",
+        "Matthew": "ಮತ್ತಾಯನು", "Mark": "ಮಾರ್ಕನು", "Luke": "ಲೂಕನು", "John": "ಯೋಹಾನನು", "Acts": "ಅಪೊಸ್ತಲರ ಕೃತ್ಯಗಳು",
+        "Romans": "ರೋಮಾಪುರದವರಿಗೆ", "1 Corinthians": "1 ಕೊರಿಂಥದವರಿಗೆ", "2 Corinthians": "2 ಕೊರಿಂಥದವರಿಗೆ", "Galatians": "ಗಲಾತ್ಯದವರಿಗೆ",
+        "Ephesians": "ಎಫೆಸದವರಿಗೆ", "Philippians": "ಫಿಲಿಪ್ಪಿಯವರಿಗೆ", "Colossians": "ಕೊಲೊಸ್ಸದವರಿಗೆ",
+        "1 Thessalonians": "1 ಥೆಸಲೊನೀಕದವರಿಗೆ", "2 Thessalonians": "2 ಥೆಸಲೊನೀಕದವರಿಗೆ",
+        "1 Timothy": "1 ತಿಮೊಥೆಯನಿಗೆ", "2 Timothy": "2 ತಿಮೊಥೆಯನಿಗೆ", "Titus": "ತೀತನಿಗೆ", "Philemon": "ಫಿಲೆಮೋನನಿಗೆ",
+        "Hebrews": "ಇಬ್ರಿಯರಿಗೆ", "James": "ಯಾಕೋಬನು", "1 Peter": "1 ಪೇತ್ರನು", "2 Peter": "2 ಪೇತ್ರನು",
+        "1 John": "1 ಯೋಹಾನನು", "2 John": "2 ಯೋಹಾನನು", "3 John": "3 ಯೋಹಾನನು", "Jude": "ಯೂದನು", "Revelation": "ಪ್ರಕಟನೆ"
+    }
+};

@@ -1,17 +1,19 @@
 const container = document.getElementById("booksContainer");
 const searchInput = document.getElementById("searchInput");
 const buttons = document.querySelectorAll(".filter-btn");
+const languageSelect = document.getElementById("languageSelect");
 
 const testamentType = container.getAttribute("data-testament");
 
 let currentCategory = "All";
+let currentLanguage = "english";
 
 // Get books for current page
 let baseBooks = bibleBooks.filter(
     book => book.testament === testamentType
 );
 
-// Display function
+// ✅ Single Display Function (FINAL)
 function displayBooks(list) {
     container.innerHTML = "";
 
@@ -19,8 +21,18 @@ function displayBooks(list) {
         const card = document.createElement("div");
         card.classList.add("card");
 
+        // 🌍 Language Logic
+        let displayName = book.name;
+
+        if (currentLanguage !== "english") {
+            const langData = bibleLanguages[currentLanguage];
+            if (langData && langData[book.name]) {
+                displayName = langData[book.name];
+            }
+        }
+
         card.innerHTML = `
-            <h3>${book.name}</h3>
+            <h3>${displayName}</h3>
             <p><strong>Category:</strong> ${book.category}</p>
             <p><strong>Chapters:</strong> ${book.chapters}</p>
             <p><strong>Verses:</strong> ${book.verses}</p>
@@ -31,17 +43,20 @@ function displayBooks(list) {
     });
 }
 
-// Apply filters (Combines Category + Search)
+// 🔄 Apply Filters (Category + Search)
 function applyFilters() {
     let filtered = baseBooks;
 
-    // Category filter logic
+    // Category filter
     if (currentCategory !== "All") {
-        filtered = filtered.filter(book => book.category === currentCategory);
+        filtered = filtered.filter(
+            book => book.category === currentCategory
+        );
     }
 
-    // Search filter logic
+    // Search filter
     const searchText = searchInput.value.toLowerCase();
+
     if (searchText) {
         filtered = filtered.filter(book =>
             book.name.toLowerCase().includes(searchText)
@@ -51,7 +66,7 @@ function applyFilters() {
     displayBooks(filtered);
 }
 
-// Category Button click listeners
+// 📚 Category Buttons
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         currentCategory = btn.getAttribute("data-category");
@@ -59,8 +74,14 @@ buttons.forEach(btn => {
     });
 });
 
-// Search input listener
+// 🔍 Search Input
 searchInput.addEventListener("input", applyFilters);
 
-// Initial load
+// 🌍 Language Change
+languageSelect.addEventListener("change", () => {
+    currentLanguage = languageSelect.value;
+    applyFilters();
+});
+
+// 🚀 Initial Load
 displayBooks(baseBooks);
