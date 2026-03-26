@@ -1,8 +1,8 @@
 # 📖 Bible Reference Web App
 
-A structured and interactive Bible reference web application built using **HTML, CSS, and JavaScript**.
+An interactive and multilingual Bible reference web application built using **HTML, CSS, and JavaScript**.
 
-This project helps users understand the structure of the Bible, explore all 66 books, and interact with the data dynamically.
+This project helps users explore the structure of the Bible, view all 66 books, and interact with the data dynamically across multiple Indian languages.
 
 ---
 
@@ -14,7 +14,7 @@ This project helps users understand the structure of the Bible, explore all 66 b
 - Old Testament Categories
 - New Testament Categories
 - Bible Facts (Longest / Shortest)
-- Languages Display (Indian Languages)
+- Languages Display
 
 ---
 
@@ -22,7 +22,7 @@ This project helps users understand the structure of the Bible, explore all 66 b
 
 - Structured dataset for all **66 Bible books**
 - Dynamic rendering using JavaScript
-- Book details:
+- Displays:
   - Name
   - Testament
   - Category
@@ -30,16 +30,29 @@ This project helps users understand the structure of the Bible, explore all 66 b
   - Verses
   - Writer
 
-- Separate rendering for Old & New Testament pages
-
 ---
 
 ### 🔵 Phase 3 — Interactivity (Completed)
 
-- 🔍 Search Bible books in real-time
+- 🔍 Real-time search functionality
 - 📚 Filter books by category
 - ⚡ Dynamic UI updates without page reload
-- Combined search + filter functionality
+- Combined search + filter system
+
+---
+
+### 🟣 Phase 4 — Multilingual Support (Completed)
+
+- 🌍 Language switching system
+- Supported Languages:
+  - English
+  - Telugu
+  - Hindi
+  - Tamil
+  - Malayalam
+  - Kannada
+
+- 🔄 Instant translation of book names
 
 ---
 
@@ -64,15 +77,6 @@ This project helps users understand the structure of the Bible, explore all 66 b
 
 ---
 
-## 🔄 Future Improvements (Next Phases)
-
-- 🌍 Multilingual Bible support
-- 📖 Bible history & timeline
-- 📱 Enhanced responsive UI
-- 🎨 Advanced UI/UX improvements
-
----
-
 ## 🌐 Live Website
 
 👉 https://charanepuri.github.io/bible-reference-app/
@@ -82,6 +86,15 @@ This project helps users understand the structure of the Bible, explore all 66 b
 ## 📌 GitHub Repository
 
 👉 https://github.com/charanepuri/bible-reference-app
+
+---
+
+## 🔄 Upcoming Improvements (Next Phases)
+
+- 📖 Bible history & timeline
+- 📚 Famous Bible stories section
+- 📱 Improved responsive design
+- 🎨 Advanced UI/UX enhancements
 
 ---
 
@@ -96,4 +109,5 @@ This project helps users understand the structure of the Bible, explore all 66 b
 ✅ Phase 1 — Completed
 ✅ Phase 2 — Completed
 ✅ Phase 3 — Completed
-⏳ Phase 4 — Upcoming (Multilingual Support)
+✅ Phase 4 — Completed
+⏳ Phase 5 — In Progress (Content Expansion)
