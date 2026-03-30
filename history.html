@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bible History | Bible Reference App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Bible History</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="old-testament.html">Old Testament</a>
+                <a href="new-testament.html">New Testament</a>
+                <a href="facts.html">Bible Facts</a>
+                <a href="languages.html">Languages</a>
+                <a href="history.html">History</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>History of the Bible in India</h2>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-card">
+                <h3>52 AD</h3>
+                <p>Thomas the Apostle arrived in India and spread Christianity.</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>Early Centuries</h3>
+                <p>Scriptures were used in Syriac (Peshitta) in Kerala churches.</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>1714</h3>
+                <p>First Tamil New Testament printed by Bartholomäus Ziegenbalg.</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>1800s</h3>
+                <p>William Carey translated Bible into multiple Indian languages.</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>Modern Era</h3>
+                <p>Bible available in 100+ Indian languages through Bible Society of India.</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h2>Famous Bible Stories</h2>
+        </section>
+
+        <section class="stories">
+            <div class="story-card" onclick="openStory('feeding')">
+                <h3>Feeding of the 5000</h3>
+                <p>Jesus fed thousands with five loaves and two fish.</p>
+            </div>
+
+            <div class="story-card" onclick="openStory('redsea')">
+                <h3>Red Sea Crossing</h3>
+                <p>Moses parted the sea for Israelites to escape Egypt.</p>
+            </div>
+
+            <div class="story-card" onclick="openStory('daniel')">
+                <h3>Daniel in Lions' Den</h3>
+                <p>God protected Daniel from lions because of his faith.</p>
+            </div>
+
+            <div class="story-card" onclick="openStory('david')">
+                <h3>David and Goliath</h3>
+                <p>David defeated the giant with faith and courage.</p>
+            </div>
+
+            <div class="story-card" onclick="openStory('jonah')">
+                <h3>Jonah and the Fish</h3>
+                <p>Jonah was swallowed by a great fish and obeyed God.</p>
+            </div>
+
+            <div class="story-card" onclick="openStory('jesus')">
+                <h3>Crucifixion of Jesus</h3>
+                <p>Jesus died on the cross for the sins of humanity.</p>
+            </div>
+        </section>
+
+        <div id="storyModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeStory()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <div class="modal-body">
+                    <p id="modalText"></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openStory(type) {
+                const modal = document.getElementById("storyModal");
+                const title = document.getElementById("modalTitle");
+                const text = document.getElementById("modalText");
+
+                const stories = {
+                    feeding: {
+                        title: "Feeding of the 5000",
+                        text: "One day, a large crowd followed Jesus to a remote place because they wanted to hear His teachings and see the miracles He performed. As the day went on, thousands of people gathered around Him. When evening came, the disciples became concerned because the people had nothing to eat. Jesus asked the disciples to feed the crowd, but they replied that it would cost a lot of money to buy enough food for everyone. A boy in the crowd had only five loaves of bread and two fish, which seemed far too little for such a large number of people. Jesus took the loaves and fish, looked up to heaven, gave thanks to God, and began breaking the bread. He gave the pieces to the disciples, who distributed them among the people. Miraculously, the food never ran out. Everyone ate until they were full. After the meal, the disciples collected the leftovers and filled twelve baskets with the remaining pieces. More than five thousand men, along with women and children, had been fed. This miracle showed that God can provide abundantly even when resources seem small, and it strengthened the faith of those who witnessed it."
+                    },
+                    redsea: {
+                        title: "Red Sea Crossing",
+                        text: "The Israelites had been slaves in Egypt for many years. God chose Moses to lead His people out of slavery and into freedom. After many powerful signs and plagues, Pharaoh finally allowed the Israelites to leave Egypt. However, Pharaoh soon changed his mind and sent his army to chase them. The Israelites found themselves trapped between the Red Sea in front of them and the Egyptian army behind them. They became afraid and cried out to Moses. God told Moses to stretch out his staff over the sea. When Moses obeyed, a powerful wind blew throughout the night, and the waters of the Red Sea parted, creating a dry path through the middle of the sea. The Israelites walked across safely with walls of water on both sides. When the Egyptian army tried to follow them, God caused the waters to return, covering the army and saving the Israelites. This incredible event showed that God protects His people and makes a way even when situations seem impossible."
+                    },
+                    daniel: {
+                        title: "Daniel in Lions' Den",
+                        text: "Daniel was a faithful servant of God who lived in Babylon after the Israelites were taken into exile. Because of his wisdom and honesty, King Darius trusted Daniel and placed him in a high position in the kingdom. Some jealous officials wanted to get rid of Daniel. They knew Daniel prayed to God every day, so they tricked the king into making a law that said no one could pray to any god or person except the king for thirty days. Anyone who disobeyed would be thrown into a den of lions. Even after hearing about the new law, Daniel continued to pray to God as he always did. The officials reported this to the king. Although the king liked Daniel, the law could not be changed, and Daniel was thrown into the lions' den. That night, God sent an angel to shut the mouths of the lions, and Daniel was not harmed. The next morning, the king hurried to the den and was relieved to find Daniel alive. Daniel explained that God had protected him because of his faithfulness. The king then praised God and honored Daniel. This story teaches that God protects those who trust Him and remain faithful even in difficult situations."
+                    },
+                    david: {
+                        title: "David and Goliath",
+                        text: "The armies of Israel and the Philistines were preparing for battle. The Philistines had a giant warrior named Goliath, who was over nine feet tall and heavily armed. For forty days, Goliath challenged the Israelites to send someone to fight him, but everyone was afraid. David was a young shepherd who came to the battlefield to bring food to his brothers. When he heard Goliath insulting the people of Israel and mocking God, David believed that God would help him defeat the giant. King Saul was unsure, but he allowed David to try. Instead of heavy armor, David took his sling and five smooth stones. As Goliath approached, David declared that he came in the name of the Lord. David placed a stone in his sling, swung it, and released it. The stone struck Goliath on the forehead, and the giant fell to the ground. David then defeated him, and the Philistine army fled. This story shows that faith and courage in God are stronger than physical strength or size."
+                    },
+                    jonah: {
+                        title: "Jonah and the Fish",
+                        text: "God told the prophet Jonah to go to the city of Nineveh and warn the people to turn away from their evil ways. Instead of obeying God, Jonah tried to run away by boarding a ship going in the opposite direction. While Jonah was on the ship, God sent a powerful storm that threatened to destroy it. The sailors were terrified and eventually realized Jonah was the cause of the storm. Jonah told them to throw him into the sea to calm it. When they did, the storm stopped immediately. God then sent a great fish to swallow Jonah. Jonah stayed inside the fish for three days and three nights, where he prayed and asked God for forgiveness. God commanded the fish to release Jonah onto dry land. This time Jonah obeyed God and went to Nineveh, warning the people. The people repented and turned to God, and the city was spared. This story teaches that God gives people second chances and wants them to obey Him."
+                    },
+                    jesus: {
+                        title: "Crucifixion of Jesus",
+                        text: "Jesus taught people about God's love, forgiveness, and the coming of God's kingdom. Many people followed Him, but some religious leaders felt threatened by His influence and wanted to stop Him. Jesus was betrayed by one of His disciples, Judas, and was arrested by the authorities. After a series of trials, the Roman governor Pontius Pilate allowed Jesus to be crucified, even though he found no real fault in Him. Jesus was forced to carry His cross to a place called Golgotha. There, He was nailed to the cross and left to die. While suffering, Jesus prayed for those who crucified Him, saying, “Father, forgive them, for they do not know what they are doing.” After several hours, Jesus died on the cross. His sacrifice was seen by Christians as the ultimate act of love, because He gave His life to save humanity from sin. Three days later, Jesus rose from the dead, showing that death was not the end and that God's power and love are greater than anything."
+                    }
+                };
+
+                title.innerText = stories[type].title;
+                text.innerText = stories[type].text;
+                modal.style.display = "block";
+            }
+
+            function closeStory() {
+                document.getElementById("storyModal").style.display = "none";
+            }
+
+            // Close modal when clicking outside of it
+            window.onclick = function(event) {
+                const modal = document.getElementById("storyModal");
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
