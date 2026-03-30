@@ -2,7 +2,7 @@
 
 An interactive and multilingual Bible reference web application built using **HTML, CSS, and JavaScript**.
 
-This project helps users explore the structure of the Bible, view all 66 books, and interact with the data dynamically across multiple Indian languages.
+This project helps users explore Bible structure, books, statistics, and content with a clean and dynamic user interface.
 
 ---
 
@@ -11,10 +11,9 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 ### 🟢 Phase 1 — Static Website (Completed)
 
 - Bible Overview Statistics
-- Old Testament Categories
-- New Testament Categories
+- Old Testament & New Testament Pages
 - Bible Facts (Longest / Shortest)
-- Languages Display
+- Languages Overview
 
 ---
 
@@ -23,8 +22,7 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 - Structured dataset for all **66 Bible books**
 - Dynamic rendering using JavaScript
 - Displays:
-  - Name
-  - Testament
+  - Book Name
   - Category
   - Chapters
   - Verses
@@ -35,8 +33,8 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 ### 🔵 Phase 3 — Interactivity (Completed)
 
 - 🔍 Real-time search functionality
-- 📚 Filter books by category
-- ⚡ Dynamic UI updates without page reload
+- 📚 Category-based filtering
+- ⚡ Dynamic UI updates
 - Combined search + filter system
 
 ---
@@ -56,6 +54,25 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 
 ---
 
+### 🟠 Phase 5 — Advanced Bible Content (Completed)
+
+- 📜 Bible History Timeline
+- 📚 Famous Bible Stories Section
+- 🪟 Modal Popup for story details
+- 🧩 Structured content presentation
+
+---
+
+### ⚪ Phase 6 — UI/UX Improvements (In Progress)
+
+- 🎨 UI polish and design improvements
+- 📱 Responsive design enhancements
+- ✨ Smooth animations & transitions
+- 🧭 Better navigation experience
+- 🧱 Layout refinements
+
+---
+
 ## 📊 Bible Statistics
 
 - **Total Books:** 66
@@ -71,9 +88,9 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 
 - HTML
 - CSS
-- JavaScript (DOM Manipulation & Interactivity)
+- JavaScript
 - Git & GitHub
-- GitHub Pages (Deployment)
+- GitHub Pages
 
 ---
 
@@ -89,12 +106,13 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 
 ---
 
-## 🔄 Upcoming Improvements (Next Phases)
+## 🔄 Future Improvements
 
-- 📖 Bible history & timeline
-- 📚 Famous Bible stories section
-- 📱 Improved responsive design
-- 🎨 Advanced UI/UX enhancements
+- 📖 Add more detailed Bible stories
+- 🔍 Advanced search features
+- 🌐 More language support
+- 🎨 Enhanced UI animations
+- 📱 Mobile-first optimization
 
 ---
 
@@ -110,4 +128,5 @@ This project helps users explore the structure of the Bible, view all 66 books, 
 ✅ Phase 2 — Completed
 ✅ Phase 3 — Completed
 ✅ Phase 4 — Completed
-⏳ Phase 5 — In Progress (Content Expansion)
+✅ Phase 5 — Completed
+⏳ Phase 6 — In Progress
