@@ -1,23 +1,22 @@
 # 📖 Bible Reference Web App
 
-An interactive and multilingual Bible reference web application built using **HTML, CSS, and JavaScript**.
+An interactive, multilingual, and fully responsive Bible reference web application built using **HTML, CSS, and JavaScript**.
 
-This project helps users explore Bible structure, books, statistics, and content with a clean and dynamic user interface.
+This project provides a structured and engaging way to explore the Bible — including books, statistics, history, and stories — with a clean and modern user interface.
 
 ---
 
 ## 🚀 Features
 
-### 🟢 Phase 1 — Static Website (Completed)
+### 🟢 Phase 1 — Static Website
 
 - Bible Overview Statistics
-- Old Testament & New Testament Pages
+- Old & New Testament Pages
 - Bible Facts (Longest / Shortest)
-- Languages Overview
 
 ---
 
-### 🟡 Phase 2 — Dynamic Data Rendering (Completed)
+### 🟡 Phase 2 — Dynamic Data Rendering
 
 - Structured dataset for all **66 Bible books**
 - Dynamic rendering using JavaScript
@@ -30,7 +29,7 @@ This project helps users explore Bible structure, books, statistics, and content
 
 ---
 
-### 🔵 Phase 3 — Interactivity (Completed)
+### 🔵 Phase 3 — Interactivity
 
 - 🔍 Real-time search functionality
 - 📚 Category-based filtering
@@ -39,7 +38,7 @@ This project helps users explore Bible structure, books, statistics, and content
 
 ---
 
-### 🟣 Phase 4 — Multilingual Support (Completed)
+### 🟣 Phase 4 — Multilingual Support
 
 - 🌍 Language switching system
 - Supported Languages:
@@ -50,26 +49,28 @@ This project helps users explore Bible structure, books, statistics, and content
   - Malayalam
   - Kannada
 
+- 🏳️ Language flags UI
 - 🔄 Instant translation of book names
 
 ---
 
-### 🟠 Phase 5 — Advanced Bible Content (Completed)
+### 🟠 Phase 5 — Advanced Bible Content
 
 - 📜 Bible History Timeline
 - 📚 Famous Bible Stories Section
-- 🪟 Modal Popup for story details
-- 🧩 Structured content presentation
+- 🪟 Modal popup for story details
+- Structured and readable content
 
 ---
 
-### ⚪ Phase 6 — UI/UX Improvements (In Progress)
+### ⚫ Phase 6 — UI/UX Improvements (Completed)
 
-- 🎨 UI polish and design improvements
-- 📱 Responsive design enhancements
-- ✨ Smooth animations & transitions
-- 🧭 Better navigation experience
-- 🧱 Layout refinements
+- 🎨 Modern and clean UI design
+- ✨ Smooth hover animations
+- 📱 Fully responsive layout
+- 🧭 Improved navigation experience
+- 🧩 Consistent card-based layout
+- 🪟 Enhanced modal UI with animations
 
 ---
 
@@ -87,10 +88,10 @@ This project helps users explore Bible structure, books, statistics, and content
 ## 🛠 Technologies Used
 
 - HTML
-- CSS
-- JavaScript
+- CSS (Responsive Design + Animations)
+- JavaScript (DOM Manipulation & Logic)
 - Git & GitHub
-- GitHub Pages
+- GitHub Pages (Deployment)
 
 ---
 
@@ -106,13 +107,14 @@ This project helps users explore Bible structure, books, statistics, and content
 
 ---
 
-## 🔄 Future Improvements
+## 💡 Key Learnings
 
-- 📖 Add more detailed Bible stories
-- 🔍 Advanced search features
-- 🌐 More language support
-- 🎨 Enhanced UI animations
-- 📱 Mobile-first optimization
+- Structuring large datasets in JavaScript
+- Implementing search and filter logic
+- Building multilingual functionality
+- Handling real-world Git & GitHub workflows
+- Designing responsive and user-friendly UI
+- Creating interactive components like modals
 
 ---
 
@@ -129,4 +131,6 @@ This project helps users explore Bible structure, books, statistics, and content
 ✅ Phase 3 — Completed
 ✅ Phase 4 — Completed
 ✅ Phase 5 — Completed
-⏳ Phase 6 — In Progress
+✅ Phase 6 — Completed
+
+🎉 **Project Completed Successfully**
