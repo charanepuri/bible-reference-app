@@ -14,7 +14,17 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 1.5em;
+}
+
 /* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 nav a {
     color: #ddd;
     margin: 0 10px;
@@ -36,20 +46,24 @@ nav a:hover {
     border-radius: 0 0 20px 20px;
 }
 
+.hero h2 {
+    font-size: 1.5em;
+}
+
 /* ===== GRID ===== */
 .stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 20px;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 10px;
 }
 
 /* ===== CARD ===== */
 .card {
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
-    margin: 0; /* removed extra spacing issue */
+    margin: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
 }
@@ -66,10 +80,25 @@ footer {
     background: #eee;
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
 /* ===== BUTTONS ===== */
 .filter-btn,
 .lang-btn {
-    padding: 8px 14px;
+    padding: 6px 10px;
+    font-size: 0.9em;
     border: none;
     border-radius: 20px;
     background: #e0d8c3;
@@ -91,8 +120,8 @@ footer {
 
 /* ===== TIMELINE ===== */
 .timeline {
-    width: 80%;
-    margin: 30px auto;
+    width: 95%;
+    margin: 20px auto;
 }
 
 .timeline-card {
@@ -112,15 +141,15 @@ footer {
 /* ===== STORIES ===== */
 .stories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
 }
 
 .story-card {
     background: #f5f5f5;
     border-radius: 12px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
@@ -146,7 +175,7 @@ footer {
     background: white;
     margin: 8% auto;
     padding: 25px;
-    width: 60%;
+    width: 90%;
     border-radius: 12px;
     text-align: center;
     animation: fadeIn 0.4s ease;
@@ -172,75 +201,110 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 
-/* 4K - 2560px */
-@media (max-width: 2560px) {
-    .stats, .stories {
-        max-width: 2000px;
-        margin: 0 auto;
+/* Mobile S - 320px */
+@media (min-width: 320px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .filter-btn, .lang-btn {
+        padding: 8px 14px;
+        font-size: 1em;
     }
 }
 
-/* Laptop L - 1440px */
-@media (max-width: 1440px) {
-    .stats, .stories {
-        max-width: 1200px;
-        margin: 0 auto;
+/* Mobile M - 375px */
+@media (min-width: 375px) {
+    .card, .story-card {
+        padding: 20px;
     }
 }
 
-/* Laptop - 1024px */
-@media (max-width: 1024px) {
+/* Mobile L - 425px */
+@media (min-width: 425px) {
     .stats, .stories {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding: 15px;
         gap: 15px;
     }
 }
 
 /* Tablet - 768px */
-@media (max-width: 768px) {
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+@media (min-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
     }
 
     .modal-content {
-        width: 90%;
+        width: 60%;
+    }
+
+    .timeline {
+        width: 80%;
+        margin: 30px auto;
     }
 
     .card {
-        margin: 10px;
+        margin: 0; /* removed extra spacing issue */
+    }
+
+    .stats {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .stories {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Laptop - 1024px */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .timeline {
+        width: 60%;
+    }
+
+    .modal-content {
+        width: 50%;
+        padding: 40px;
     }
 
     .stats, .stories {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 
-/* Mobile L - 425px */
-@media (max-width: 425px) {
+/* Laptop L - 1440px */
+@media (min-width: 1440px) {
     .stats, .stories {
-        grid-template-columns: 1fr;
-        padding: 10px;
-        gap: 10px;
+        max-width: 1400px;
+    }
+
+    .modal-content {
+        width: 40%;
     }
 }
 
-/* Mobile M - 375px */
-@media (max-width: 375px) {
-    .card, .story-card, .timeline-card {
-        padding: 15px;
+/* 4K - 2560px */
+@media (min-width: 2560px) {
+    body {
+        font-size: 1.2em;
     }
-}
 
-/* Mobile S - 320px */
-@media (max-width: 320px) {
-    header h1, .hero h2 {
-        font-size: 1.5em;
+    .timeline {
+        width: 40%;
     }
-    .filter-btn, .lang-btn {
-        padding: 6px 10px;
-        font-size: 0.9em;
+
+    .stats, .stories {
+        max-width: 2000px;
     }
 }
